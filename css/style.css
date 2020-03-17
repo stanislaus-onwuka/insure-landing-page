@@ -331,7 +331,7 @@ footer{
 
 .socials{
     display: block;
-    margin: 0 30%;
+    margin: 0 23%;
     padding: 0.5rem;
 }
 
@@ -360,7 +360,7 @@ footer{
 .footer-list{
     display: block;
     text-align: center;
-    margin: 0 5.5rem;
+    margin: 0 3rem;
     list-style: none;
 }
 
@@ -447,19 +447,19 @@ footer{
     }
     
     .jumbotron-text{
-        margin: 7rem 0 0 8rem;
+        margin: 6rem 0 0 8rem;
         background: none;
     }
     
     .title-line{
         display: block;
         width: 200px;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
     
     .jumbotron-title{
         font-family: 'DM Serif Display', serif;
-        margin: 4rem 0.2rem 0 0.2rem;
+        margin: 3rem 0.2rem 0 0.2rem;
         font-size: 70px;
         font-weight: 700;
         text-align: left;
@@ -467,7 +467,7 @@ footer{
     
     .jumbotron-body{
         font-family: 'Karla', sans-serif;
-        margin: 1rem 0.5rem 2.5rem 0.5rem;
+        margin: 0.5rem 0.5rem 2.5rem 0.5rem;
         width: 80%;
         font-size: 20px;
         font-weight: 400;

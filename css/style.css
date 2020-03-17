@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+*,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container{
+    margin: 0;
+}
+
+
+/* Navbar */
+.logo{
+    margin-left: 1rem;
+    padding: 0.5rem;
+    vertical-align: middle;
+
+}
+
+.nav-bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.desktop-nav{
+    display: none;   
+}
+
+.hamburger{
+    display: inline-block;
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+    vertical-align: middle;
+}
+
+.hamburger img{
+    cursor: pointer;
+}
+
+#hamburger-close{
+    display: none;
+}
+
+.desktop-nav li{
+    display: inline-block;
+    padding: .5rem 1.7rem;
+    margin: 0.5rem;
+    color: #838282da;
+    cursor: pointer;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.desktop-nav li:hover{
+    color: hsl(256, 26%, 20%);
+}
+
+.cta-btn{
+    border: 1px solid hsl(256, 26%, 20%);
+    color: hsl(256, 26%, 20%) !important;
+    transition: 0.3s;
+}
+
+.cta-btn:hover{
+    border: 1px solid hsl(256, 26%, 20%);
+    background-color: hsl(256, 26%, 20%);
+    color: #ffffff !important;
+}
+
+.mobile-nav{
+    padding: 2rem;
+    margin: 3rem -1rem;
+    list-style: none;
+    position: fixed;
+    z-index: 2;
+    font-family: 'Karla', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: hsl(270, 9%, 17%) no-repeat url('../images/bg-pattern-mobile-nav.svg');
+    background-position: 20% 90% ;
+    background-size: contain;
+    transition: ease-in 0.4s;
+    left: -10000px;
+}
+
+.mobile-nav li{
+    cursor: pointer;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    transition: 0.3s;
+}
+
+.mobile-nav li:hover{
+    color: hsl(216, 30%, 68%);
+}
+
+.nav-out{
+    left: 16px;
+}
+
+.cta-mobile-btn{
+    border: 1px solid #ffffff;
+    color: #ffffff !important;
+    transition: 0.3s;
+}
+
+.cta-mobile-btn:hover{
+    border: 1px solid hsl(216, 30%, 68%);
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(216, 30%, 68%) !important;
+}
+
+/* Jumbotron */
+
+.jumbotron{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    background-color: hsl(256, 26%, 20%);
+    padding: 0rem;
+    color: #ffffff;
+    height: 160vh;
+    
+}
+
+.bg-pattern-intro-left{
+    display: none;
+}
+
+.bg-pattern-intro-right{
+    display: none;
+    position: absolute;
+    right: 0.1rem;
+    margin-top: -10rem;
+}
+
+.bg-pattern-intro-left-mobile{
+    position: absolute;
+    right: 0.1rem;
+    margin-top: -10rem;
+}
+
+.jumbotron-text{
+    background: url('../images/bg-pattern-intro-left-mobile.svg') top left no-repeat;
+}
+
+.title-line{
+    width: 150px;
+    margin-top: 1rem;
+}
+
+.jumbotron-line{
+    display: none;
+}
+
+.jumbotron-title{
+    font-family: 'DM Serif Display', serif;
+    margin: 4rem 0.2rem 0 0.2rem;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.jumbotron-body{
+    font-family: 'Karla', sans-serif;
+    margin: 1rem 0.5rem 3rem 0.5rem;
+    width: 90%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.jumbotron-img-mobile{
+    display: block;
+    width: 100%;
+}
+
+.jumbotron-img-desktop{
+    display: none;
+}
+
+.btn{
+    border: 1px solid #ffffff;
+    color: #ffffff !important;
+    padding: 1rem 1.7rem;
+    transition: 0.3s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: 1px solid #ffffff;
+    color: hsl(256, 26%, 20%) !important;
+    background-color: #ffffff;
+    padding: 1rem 1.7rem;
+    transition: 0.3s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.jumbotron-btn{
+    margin: 2rem 7rem;
+}
+
+/* Main and Body */
+
+main{
+    font-family: 'Karla', sans-serif;
+    background-color: #ffffff;
+    margin: 7rem 0 1rem 0;
+}
+
+/* We are different section */
+.we-are-different-line{
+    margin: auto;
+}
+
+.we-are-different > h1{
+    font-family: 'DM Serif Display', serif;
+    margin-top: 3rem;
+    font-weight: 700;
+    text-align: center;
+    font-size: 45px;
+}
+
+.feature-list{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.feature{
+    width: 100%;
+    margin: 3rem 0 ;
+    
+}
+
+.feature img{
+    margin: 1rem 40%;
+    
+}
+
+.feature h5{
+    margin: 2rem auto ;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 700;
+}
+
+.feature p{
+    color: hsl(273, 4%, 51%);
+    text-align: center;
+    margin: 0 4rem;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* How we Work */
+.how-we-work{
+    padding: 2.7rem;
+    margin-top: 5rem;
+    background: hsl(256, 26%, 20%) no-repeat url('../images/bg-pattern-how-we-work-mobile.svg');
+    background-position: top right;
+    color: #ffffff;
+    font-family: 'DM Serif Display', serif;
+}
+
+
+.how-we-work p{
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.how-we-work-btn{
+    width: max-content;
+    display: inline-block;
+    margin: 0.2rem 5rem;
+}
+
+
+/* Footer */
+
+footer{
+    padding: 2rem 2rem;
+    margin: 10rem 0 0 0;
+    font-family: 'Karla', sans-serif;
+    background: #cfcfcf2d no-repeat url('../images/bg-pattern-footer-mobile.svg');
+    background-size: contain;
+}
+
+.bg-pattern-footer{
+    display: none;
+    position: absolute;
+    left: 2rem;
+    margin-top: -21rem;
+    z-index: 0;
+}
+
+.footer-heading{
+    width: 100%;
+}
+
+.footer-logo{
+    display: block;
+    padding: 1rem;
+    margin: auto;
+}
+
+.socials{
+    display: block;
+    margin: 0 30%;
+    padding: 0.5rem;
+}
+
+.social-icon {
+    margin: 0 0.1rem ;
+    cursor: pointer;
+   
+}
+
+.social-icon :hover{
+    fill: #000000;
+    transition: 0.3s;
+}
+
+.footer-group{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2rem;
+    z-index: 1;
+    margin: auto;
+    /* text-align: center; */
+}
+
+.footer-list{
+    display: block;
+    text-align: center;
+    margin: 0 5.5rem;
+    list-style: none;
+}
+
+.footer-list li{
+    margin: 1.5rem 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-item{
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: hsl(270, 9%, 17%);
+    text-decoration: none;
+    font-weight: 700;   
+}
+
+.footer-item:hover{
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+.footer-list-heading{
+    color: hsl(273, 4%, 51%);
+    margin: 2.5rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width: 1140px){
+
+    .desktop-nav{
+        list-style: none;
+        display: inline-block;
+        flex-basis: 50%;
+    }
+
+    .desktop-nav li{
+        display: inline-block;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .jumbotron{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: hsl(256, 26%, 20%);
+        padding: 3rem;
+        color: #ffffff;
+        height: 110vh;
+    }
+
+    .bg-pattern-intro-left-mobile{
+        display: none;
+    }
+    
+    .bg-pattern-intro-left{
+        display: block;
+        position: absolute;
+        margin-top: -12rem;
+    }
+    
+    .bg-pattern-intro-right{
+        display: block;
+        position: absolute;
+        right: 0.1rem;
+        margin-top: -45rem;
+    }
+    
+    .jumbotron-text{
+        margin: 7rem 0 0 8rem;
+        background: none;
+    }
+    
+    .title-line{
+        display: block;
+        width: 200px;
+        margin-top: 1rem;
+    }
+    
+    .jumbotron-title{
+        font-family: 'DM Serif Display', serif;
+        margin: 4rem 0.2rem 0 0.2rem;
+        font-size: 70px;
+        font-weight: 700;
+        text-align: left;
+    }
+    
+    .jumbotron-body{
+        font-family: 'Karla', sans-serif;
+        margin: 1rem 0.5rem 2.5rem 0.5rem;
+        width: 80%;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    .jumbotron-img-mobile{
+        display: none;
+    }
+    
+    .jumbotron-img-desktop{
+        display: block;
+        width: 100%;
+        margin: 12rem 6rem -12rem 0;
+    }
+
+    .jumbotron-btn{
+        margin: 2rem 0;
+    }
+
+    main{
+        margin: 15rem 10rem 1rem 10rem;
+    }
+
+    .we-are-different-line{
+        margin: 0;
+    }
+
+    .we-are-different > h1{
+        font-family: 'DM Serif Display', serif;
+        margin-top: 3rem;
+        font-weight: 700;
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .feature-list{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5rem;
+    }
+
+    .feature{
+        margin: 0;
+    }
+
+    .feature img{
+        margin: 1rem 0;
+        
+    }
+
+    .feature h5{
+        margin: 2rem 0 ;
+        font-size: 30px;
+        font-family: 'DM Serif Display', serif;
+        text-align: left;
+    }
+
+    .feature p{
+        text-align: left;
+        width: 90%;
+        color: hsl(273, 4%, 51%);
+        margin: 0;
+    }
+
+    .how-we-work p{
+        display: inline-block;
+        padding: 1rem;
+        width: 40%;
+        font-size: 45px;
+        vertical-align: middle;
+    }
+
+    .how-we-work{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2.7rem;
+        margin-top: 5rem;
+        background: hsl(256, 26%, 20%) no-repeat url('../images/bg-pattern-how-we-work-desktop.svg');
+        background-position: top right;
+        color: #ffffff;
+        font-family: 'DM Serif Display', serif;
+    }
+
+    .how-we-work-btn{
+        position: relative;
+        display: inline;
+        flex-basis: 17%;
+        z-index: 2;
+    }
+
+    footer{
+        padding: 2rem 10rem;
+        margin: 10rem 2rem 0 2rem;
+        font-family: 'Karla', sans-serif;
+        background-color: #cfcfcf2d;
+        background-image: url('../images/bg-pattern-footer-desktop.svg');
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: unset;
+    }
+    
+    .footer-logo{
+        display: inline-block;
+        vertical-align: middle;
+        padding: 1rem;
+    }
+    
+    .socials{
+        display:inline-block;
+        margin: 0 0 0 60%;
+        vertical-align: middle;
+    }
+    
+    .social-icon {
+        margin: 0 0.1rem ;
+        cursor: pointer;
+    }
+    
+    .social-icon :hover{
+        fill: #000000;
+    }
+    
+    .footer-group{
+        position: relative;;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        /* flex-basis: 20%; */
+        padding: 2rem;
+        z-index: 1;
+    }
+    
+    .footer-list{
+        margin: 0 3rem;
+        list-style: none;
+    }
+    
+    .footer-list li{
+        margin: 2rem 0;
+    }
+    
+    .footer-item{
+        margin: 1rem 0;
+        text-transform: uppercase;
+        color: hsl(270, 9%, 17%);
+        text-decoration: none;
+        font-weight: 700;
+    }
+    
+    .footer-item:hover{
+        text-decoration: underline;
+    }
+    
+    .footer-list-heading{
+        color: hsl(273, 4%, 51%);
+        margin: 0 0 2rem 0;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+}

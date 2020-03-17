@@ -447,7 +447,7 @@ footer{
     }
     
     .jumbotron-text{
-        margin: 6rem 0 0 8rem;
+        margin: 5rem 0 0 8rem;
         background: none;
     }
     
@@ -459,8 +459,8 @@ footer{
     
     .jumbotron-title{
         font-family: 'DM Serif Display', serif;
-        margin: 3rem 0.2rem 0 0.2rem;
-        font-size: 70px;
+        margin: 2.5rem 0.2rem 0 0.2rem;
+        font-size: 60px;
         font-weight: 700;
         text-align: left;
     }
@@ -469,7 +469,7 @@ footer{
         font-family: 'Karla', sans-serif;
         margin: 0.5rem 0.5rem 2.5rem 0.5rem;
         width: 80%;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 400;
         text-align: left;
     }
@@ -536,8 +536,8 @@ footer{
     .how-we-work p{
         display: inline-block;
         padding: 1rem;
-        width: 40%;
-        font-size: 45px;
+        width: 50%;
+        font-size: 40px;
         vertical-align: middle;
     }
 
@@ -546,7 +546,7 @@ footer{
         justify-content: space-around;
         align-items: center;
         padding: 2.7rem;
-        margin-top: 5rem;
+        margin-top: 3rem;
         background: hsl(256, 26%, 20%) no-repeat url('../images/bg-pattern-how-we-work-desktop.svg');
         background-position: top right;
         color: #ffffff;
@@ -556,8 +556,9 @@ footer{
     .how-we-work-btn{
         position: relative;
         display: inline;
-        flex-basis: 17%;
+        flex-basis: 20%;
         z-index: 2;
+        text-align: center;
     }
 
     footer{
